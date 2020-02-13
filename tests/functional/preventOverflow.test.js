@@ -13,7 +13,6 @@ it('should not overflow when small reference is at edge of boundary', async () =
 });
 
 it('should not be tethered earlier than expected with a point reference', async () => {
-  const page = await browser.newPage();
   await page.goto(`${TEST_URL}/modifiers/preventOverflow/point.html`);
 
   await scroll(page, '#scroll', 300);
